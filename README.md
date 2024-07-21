@@ -4,23 +4,23 @@
 
 ICP registration is the process to align two point clouds `pcd1` and `pcd2`, by calculating rotation and translation
 
-1. **Compute Centroids**: Calculate the centroids of both point clouds.
+1. **Compute Centroids**: 
    
-2. **Center the Point Clouds**: Subtract the centroids from the points in each cloud to center them around the origin.
+2. **Center the Point Clouds**: 
    
-3. **Compute Covariance Matrix**: Calculate the covariance matrix `H` that captures the correlation between the centered point clouds.
+3. **Compute Covariance Matrix**: 
    
-4. **Perform SVD**: Decompose the covariance matrix using Singular Value Decomposition (SVD) to extract the rotation matrix `R`.
+4. **Perform SVD**:
    
-5. **Compute Translation**: Compute the translation vector `t` to align the centroids after rotation.
-   
-6. **Form the Transformation Matrix**: Construct the final transformation matrix that combines rotation and translation.
-   
-7. **Apply Transformation**: Apply the computed transformation to `pcd2` to align it with `pcd1`.
+5. **Compute Translation**:
+6.    
+7. **Form the Transformation Matrix**:
+8.    
+9. **Apply Transformation**: 
 
 
 
-### Cross verification if the ICP id correctly implemented
+### Cross verification 
 
 1. Check rotation is correct by checking determinant, R determinant: 1
 
@@ -30,7 +30,8 @@ Translation Vector t: -1.50067e-11  -2.1771e-11 -3.05818e-11
 ```
 3. Also check for the size of each computation to cross verify in every step.
 
-4. Check  SVD is performed misplacing U, V will effect the whole process
+4. Check  SVD is performed correctly,
+misplacing U, V will effect the whole process
 ![SVD Miscalculation](Miscalculation.png)
 
 ## Conclusion
