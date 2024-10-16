@@ -4,19 +4,20 @@
 
 ICP registration is the process to align two point clouds `pcd1` and `pcd2`, by calculating rotation and translation
 
-1. **Compute Centroids**: 
+1. **Compute Centroids**
    
-2. **Center the Point Clouds**: 
+2. **Center the Point Clouds**
    
-3. **Compute Covariance Matrix**: 
+3. **Compute Covariance Matrix** 
    
-4. **Perform SVD**:
+4. **Perform SVD**
+5. **Obtain Rotation Matrix**
    
-5. **Compute Translation**:
+6. **Compute Translation**
     
-6. **Form the Transformation Matrix**:
+7. **Homogenous Transformation Matrix**
  
-7. **Apply Transformation**: 
+8. **Apply Transformation**
 
 
 
